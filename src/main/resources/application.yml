@@ -1,0 +1,23 @@
+server:
+  port: 9010
+
+swagger:
+  enable: true
+
+mybatis-plus:
+  type-aliases-package: cn.hyx.bg.entity
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  configuration:
+    # 打印执行的SQL语句及返回的数据
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+spring:
+  application:
+    name: bg
+  datasource:
+    url: jdbc:mysql://rm-wz9ov0f403gi9b9shro.mysql.rds.aliyuncs.com:3306/y_game
+    username: hyx
+    password: h8986345@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+

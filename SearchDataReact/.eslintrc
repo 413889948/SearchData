@@ -1,0 +1,17 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "semi": "error",
+    // jsx的引号
+    "jsx-quotes": ["error", "prefer-double"],
+
+    // 组件的displayName不强制要求
+    "react/display-name": ["off", { "ignoreTranspilerName": false }]
+  }
+}
